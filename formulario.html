@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>formulario</title> 
+	<script src="_js/controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>formulario</h1>
+	<a href="index.html">inicio </a>
+	<form>
+		<p>Nome Completo:
+		<input type="Nome Completo" name="Nome Completo" id="name" placeholder="Digite seu nome completo"></p>
+		<br>
+		<p>Idade: <input type="Idade" name="Idade" id="idade" placeholder="Digite sua idade" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></p>
+		<br>
+		<p>Email: <input type="Email" name ="Email" id="email"placeholder="Digite seu email"></p>
+		<br>
+		<p>CPF: <input type="CPF" name="CPF" id="CPF" placeholder="Digite seu CPF" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></p>
+		<br>
+	    <p>Telefone: <input type="Telefone" name="Telefone" id="fone" placeholder="Digite seu telefone"onkeypress="return event.charCode >= 48 && event.charCode <= 57" onblur="maskfone()"></p>
+	    <br>
+		<p>Cep: <input type="Cep" name="Cep" id="cep"placeholder="Digite seu Cep" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></p>
+		<br>
+        <p>Endereço: <input type="Endereço" name="Endereço" id="endereco" placeholder="Digite seu endereço" ></p>
+		<br>
+		<p>N°: <input type="N°" name="N°" id="numero" placeholder="Digite o numero da sua casa "></p>
+		<br>
+		<p>Complemento: <input type="Complemento" name="complemento" id="complemento" placeholder="Digite o complemento "></p>
+		<br>
+		<p>Bairro: <input type="Bairro" name="Bairro" id="Bairro" placeholder="Digite seu bairro"></p>
+		<br>
+		<p>Cidade: <input type="Cidade" name="Cidade" id="Cidade" placeholder="Digite sua cidade "></p>
+		<br>
+		<p>Estado: <input type="Estado" name="Estado" id="Estado" placeholder="Digite seu estado"></p>
+		<br>
+	</form>
+	<button onclick="verificar()">ENVIAR</button>
+	<br>
+</body>
+</html>
